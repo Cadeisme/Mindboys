@@ -1,0 +1,51 @@
+package io.github.fairyfruit.mindboys.rendering;
+
+import org.lwjgl.glfw.Callbacks;
+import org.lwjgl.glfw.GLFWErrorCallback;
+
+import io.github.fairyfruit.mindboys.settings.Settings;
+
+import static org.lwjgl.system.MemoryUtil.*;
+import static org.lwjgl.glfw.GLFW.*;
+
+public class Window {
+
+	private long window;
+	
+	public Window(){
+		GLFWErrorCallback.createPrint(System.err).set();
+		
+		
+		//Initialize GLFW
+		if(!glfwInit()){
+			throw new IllegalStateException("GLFW could not initialize");
+		}
+		
+		//Configure GLFW
+		glfwDefaultWindowHints();
+		glfwWindowHint(GLFW_VISIBLE, GLFW_FALSE);
+		glfwWindowHint(GLFW_RESIZABLE, GLFW_TRUE);
+		
+		//create window
+		window = glfwCreateWindow(Settings.width,Settings.height,Settings.WINDOW_NAME,NULL,NULL);
+		if(window == NULL){
+			throw new RuntimeException("Couldn't create GLFW window");
+		}
+		
+		glfwSetKeyCallback(window, (window, key, scancode, action, mods) -> {
+			if(key == Settings.keybindingEscape && action == GLFW_RELEASE){
+				glfwSetWindowShouldClose(window, true);
+			}
+		});
+		
+	}
+	
+	public void cleanup(){
+		Callbacks.glfwFreeCallbacks(window);
+		glfwDestroyWindow(window);
+		
+		glfwTerminate();
+		glfwSetErrorCallback(null).free();
+	}
+	
+}

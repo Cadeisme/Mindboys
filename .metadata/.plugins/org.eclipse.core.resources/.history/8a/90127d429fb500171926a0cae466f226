@@ -1,0 +1,7 @@
+package io.github.fairyfruit.mindboys.main;
+
+public class Keymanager {
+
+	public static boolean[] keys = new boolean[4];
+	
+}
