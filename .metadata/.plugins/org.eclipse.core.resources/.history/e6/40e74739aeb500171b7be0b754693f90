@@ -1,0 +1,24 @@
+package io.github.fairyfruit.mindboys.main;
+
+import org.lwjgl.system.Configuration;
+
+import io.github.fairyfruit.mindboys.settings.Settings;
+
+public class Runner {
+
+	
+	public static void main(String[] args){
+		
+		String jarDir = ClassLoader.getSystemClassLoader().getResource(".").getPath();
+		
+		System.out.println(jarDir);
+		
+		Configuration.LIBRARY_PATH.set(jarDir + "/" + Settings.LWJGL_FILE + "/" + "Natives");
+		
+		new Game();
+		
+		Game.instance.loop();
+		
+		Game.instance.cleanup();
+	}
+}

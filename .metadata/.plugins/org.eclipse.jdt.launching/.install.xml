@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <dirs>
+<<<<<<< HEAD
 <entry loc="/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home" stamp="1485396748000"/>
+=======
+<entry loc="/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home" stamp="1428689639000"/>
+<entry loc="/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home" stamp="1459498949000"/>
+>>>>>>> 9012c19b7443e10890e152bf340cd6a01aff092c
 </dirs>

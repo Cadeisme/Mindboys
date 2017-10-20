@@ -1,0 +1,24 @@
+package io.github.fairyfruit.mindboys.rendering;
+
+import org.lwjgl.glfw.Callbacks;
+import org.lwjgl.glfw.GLFW;
+
+import static org.lwjgl.system.MemoryUtil.*;
+
+public class Window {
+
+	private long window;
+	
+	public Window(){
+		
+	}
+	
+	public void cleanup(){
+		Callbacks.glfwFreeCallbacks(window);
+		GLFW.glfwDestroyWindow(window);
+		
+		GLFW.glfwTerminate();
+		GLFW.glfwSetErrorCallback(null).free();
+	}
+	
+}

@@ -1,0 +1,69 @@
+package io.github.fairyfruit.mindboys.rendering;
+
+import org.lwjgl.glfw.Callbacks;
+import org.lwjgl.glfw.GLFWErrorCallback;
+
+import io.github.fairyfruit.mindboys.main.Keymanager;
+import io.github.fairyfruit.mindboys.settings.Settings;
+
+import static org.lwjgl.system.MemoryUtil.*;
+import static org.lwjgl.glfw.GLFW.*;
+
+public class Window {
+
+	private long window;
+	
+	public Window(){
+		GLFWErrorCallback.createPrint(System.err).set();
+		
+		
+		//Initialize GLFW
+		if(!glfwInit()){
+			throw new IllegalStateException("GLFW could not initialize");
+		}
+		
+		//Configure GLFW
+		glfwDefaultWindowHints();
+		glfwWindowHint(GLFW_VISIBLE, GLFW_FALSE);
+		glfwWindowHint(GLFW_RESIZABLE, GLFW_TRUE);
+		
+		//create window
+		window = glfwCreateWindow(Settings.width,Settings.height,Settings.WINDOW_NAME,NULL,NULL);
+		if(window == NULL){
+			throw new RuntimeException("Couldn't create GLFW window");
+		}
+		
+		
+		//Keymanager
+		glfwSetKeyCallback(window, (window, key, scancode, action, mods) -> {
+			
+			if(key == Settings.keybindingEscape && action == GLFW_RELEASE){
+				glfwSetWindowShouldClose(window, true);
+			}
+			
+			
+			
+			int keyNum = 0;
+			
+			if(key == Settings.keybindingUp) keyNum = Keymanager.UP;
+			if(key == Settings.keybindingDown) keyNum = Keymanager.DOWN;
+			if(key == Settings.keybindingLeft) keyNum = Keymanager.LEFT;
+			if(key == Settings.keybindingRight) keyNum = Keymanager.RIGHT;
+			
+			Keymanager.keys[keyNum] = action!=GLFW_RELEASE;
+			
+		});
+		
+		
+		
+	}
+	
+	public void cleanup(){
+		Callbacks.glfwFreeCallbacks(window);
+		glfwDestroyWindow(window);
+		
+		glfwTerminate();
+		glfwSetErrorCallback(null).free();
+	}
+	
+}

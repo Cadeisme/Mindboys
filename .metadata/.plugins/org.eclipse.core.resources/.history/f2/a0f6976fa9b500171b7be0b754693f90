@@ -1,0 +1,10 @@
+package io.github.fairyfruit.mindboys.main;
+
+import io.github.fairyfruit.mindboys.rendering.Window;
+
+public class Game {
+
+	public Game(){
+		new Window();
+	}
+}
