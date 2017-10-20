@@ -35,7 +35,7 @@
 <entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/jre/classes"/>
 </bootpath>
 <extensionDirs>
-<entry path="/Users/s223852/Library/Java/Extensions"/>
+<entry path="/Users/s119655/Library/Java/Extensions"/>
 <entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/jre/lib/ext"/>
 <entry path="/Library/Java/Extensions"/>
 <entry path="/Network/Library/Java/Extensions"/>
