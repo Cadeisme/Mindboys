@@ -41,8 +41,12 @@
 <<<<<<< HEAD
 <entry path="/Users/s119655/Library/Java/Extensions"/>
 =======
+<<<<<<< HEAD
+<entry path="/Users/s119655/Library/Java/Extensions"/>
+=======
 <entry path="/Users/s223852/Library/Java/Extensions"/>
 >>>>>>> 9012c19b7443e10890e152bf340cd6a01aff092c
+>>>>>>> master
 <entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/jre/lib/ext"/>
 <entry path="/Library/Java/Extensions"/>
 <entry path="/Network/Library/Java/Extensions"/>
