@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 INDEX VERSION 1.127+/Users/s119655/Documents/GitHub/Mindboys/.metadata/.plugins/org.eclipse.jdt.core
 1234144164.index
 277257437.index
@@ -12,6 +13,36 @@ INDEX VERSION 1.127+/Users/s119655/Documents/GitHub/Mindboys/.metadata/.plugins/
 1793271789.index
 962327934.index
 2696502476.index
+=======
+<<<<<<< HEAD
+INDEX VERSION 1.127+/Users/s119655/Documents/GitHub/Mindboys/.metadata/.plugins/org.eclipse.jdt.core
+2634225966.index
+4238018145.index
+1271342938.index
+1753319412.index
+506999199.index
+1969767409.index
+2867016645.index
+4036230714.index
+1911538825.index
+521061135.index
+404199878.index
+3670248649.index
+1067258947.index
+3767115374.index
+3131291862.index
+2363563081.index
+1315525803.index
+3735975305.index
+=======
+INDEX VERSION 1.127+/Users/s223852/Documents/Mindboys/.metadata/.plugins/org.eclipse.jdt.core
+2901305821.index
+868297787.index
+3163515872.index
+2077127004.index
+3735975305.index
+2396324609.index
+>>>>>>> master
 845108008.index
 1116417522.index
 1752639605.index
@@ -98,7 +129,19 @@ INDEX VERSION 1.127+/Users/s119655/Documents/GitHub/Mindboys/.metadata/.plugins/
 2612557018.index
 1271342938.index
 4121298407.index
+<<<<<<< HEAD
 2966544999.index
 3489204877.index
 3735975305.index
 376072183.index
+=======
+3316571134.index
+1234144164.index
+2505745594.index
+2696502476.index
+3990347330.index
+2634225966.index
+2363563081.index
+1732137679.index
+>>>>>>> 9012c19b7443e10890e152bf340cd6a01aff092c
+>>>>>>> master

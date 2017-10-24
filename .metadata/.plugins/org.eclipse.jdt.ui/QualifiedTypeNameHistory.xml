@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
+<qualifiedTypeNameHistroy/>
+=======
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="org.lwjgl.glfw.Callbacks"/>
 <fullyQualifiedTypeName name="org.lwjgl.glfw.GLFWErrorCallback"/>
@@ -16,3 +19,4 @@
 <fullyQualifiedTypeName name="io.github.fairyfruit.mindboys.toolbox.Timer"/>
 <fullyQualifiedTypeName name="org.lwjgl.opengl.GL30"/>
 </qualifiedTypeNameHistroy>
+>>>>>>> 9012c19b7443e10890e152bf340cd6a01aff092c

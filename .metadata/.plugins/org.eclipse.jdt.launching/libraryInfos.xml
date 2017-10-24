@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <libraryInfos>
+<<<<<<< HEAD
+=======
 <libraryInfo home="/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home" version="1.8.0_45">
 <bootpath>
 <entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/resources.jar"/>
@@ -23,6 +25,7 @@
 <entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/endorsed"/>
 </endorsedDirs>
 </libraryInfo>
+>>>>>>> 9012c19b7443e10890e152bf340cd6a01aff092c
 <libraryInfo home="/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home" version="1.8.0_91">
 <bootpath>
 <entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/jre/lib/resources.jar"/>
@@ -35,7 +38,15 @@
 <entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/jre/classes"/>
 </bootpath>
 <extensionDirs>
+<<<<<<< HEAD
 <entry path="/Users/s119655/Library/Java/Extensions"/>
+=======
+<<<<<<< HEAD
+<entry path="/Users/s119655/Library/Java/Extensions"/>
+=======
+<entry path="/Users/s223852/Library/Java/Extensions"/>
+>>>>>>> 9012c19b7443e10890e152bf340cd6a01aff092c
+>>>>>>> master
 <entry path="/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/jre/lib/ext"/>
 <entry path="/Library/Java/Extensions"/>
 <entry path="/Network/Library/Java/Extensions"/>
