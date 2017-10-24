@@ -1,0 +1,5 @@
+package io.github.fairyfruit.mindboys.rendering.shaders;
+
+public class ShaderProgram {
+
+}
