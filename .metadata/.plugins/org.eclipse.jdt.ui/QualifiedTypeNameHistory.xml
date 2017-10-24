@@ -17,5 +17,6 @@
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="org.lwjgl.opengl.GL11"/>
 <fullyQualifiedTypeName name="io.github.fairyfruit.mindboys.toolbox.Timer"/>
+<fullyQualifiedTypeName name="org.lwjgl.opengl.GL30"/>
 </qualifiedTypeNameHistroy>
 >>>>>>> 9012c19b7443e10890e152bf340cd6a01aff092c
