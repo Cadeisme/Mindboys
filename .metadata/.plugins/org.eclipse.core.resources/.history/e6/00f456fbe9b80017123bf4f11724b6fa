@@ -1,0 +1,25 @@
+package io.github.fairyfruit.mindboys.main;
+
+<<<<<<< Updated upstream
+=======
+
+/**
+ * 
+ * @author Gehrig Wilcox
+ * @version 1.0
+ * @since 2017-10-23
+ *
+ */
+>>>>>>> Stashed changes
+public class Runner {
+
+	
+	public static void main(String[] args){
+		
+		new Game();
+		
+		Game.instance.loop();
+		
+		Game.instance.cleanup();
+	}
+}

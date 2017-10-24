@@ -1,5 +1,13 @@
 package io.github.fairyfruit.mindboys.main;
 
+
+/**
+ * 
+ * @author Gehrig Wilcox
+ * @version 1.0
+ * @since 2017-10-23
+ *
+ */
 public class Runner {
 
 	

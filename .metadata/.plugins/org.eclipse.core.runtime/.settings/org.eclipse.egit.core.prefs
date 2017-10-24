@@ -1,2 +1,11 @@
+<<<<<<< Updated upstream
 GitRepositoriesView.GitDirectories=/Users/s119655/Documents/GitHub/Mindboys/.git\:
+=======
+<<<<<<< HEAD
+GitRepositoriesView.GitDirectories=/Users/s223852/Documents/git/Mindboys/.git\:
+core_defaultRepositoryDir=/Users/s223852/Documents/git
+=======
+GitRepositoriesView.GitDirectories=/Users/s119655/Documents/GitHub/Mindboys/.git\:
+>>>>>>> origin/master
+>>>>>>> Stashed changes
 eclipse.preferences.version=1
