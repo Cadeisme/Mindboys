@@ -1,12 +1,21 @@
 package io.github.fairyfruit.mindboys.main;
 
 import org.lwjgl.opengl.GL;
+import org.lwjgl.opengl.GL11;
 
 import io.github.fairyfruit.mindboys.rendering.Renderer;
 import io.github.fairyfruit.mindboys.rendering.Window;
 import io.github.fairyfruit.mindboys.settings.Settings;
 import io.github.fairyfruit.mindboys.toolbox.Timer;
 
+
+/**
+ * 
+ * @author Gehrig Wilcox
+ * @version 1.0
+ * @since 2017-10-23
+ *
+ */
 public class Game {
 
 	public static Game instance;
@@ -21,7 +30,13 @@ public class Game {
 		
 		GL.createCapabilities();
 		
-		Renderer.init();
+		GL11.glEnable(GL11.GL_DEPTH_TEST);
+		
+		try {
+			Renderer.init();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public void loop(){
@@ -45,7 +60,7 @@ public class Game {
 			
 			alpha = accumulator / interval;
 			
-			Renderer.render(alpha); //render
+			render(alpha);
 			
 			
 			Timer.instance.update();
@@ -59,6 +74,11 @@ public class Game {
 		
 		
 		Timer.instance.updateUPS();
+	}
+
+	
+	private void render(float alpha){
+		Renderer.render(alpha);
 	}
 	
 	

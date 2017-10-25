@@ -15,6 +15,13 @@ import org.lwjgl.system.MemoryStack;
 import io.github.fairyfruit.mindboys.main.Keymanager;
 import io.github.fairyfruit.mindboys.settings.Settings;
 
+/**
+ * 
+ * @author Gehrig Wilcox
+ * @version 1.0
+ * @since 2017-10-23
+ *
+ */
 public class Window {
 
 	public static Window instance;
@@ -70,6 +77,10 @@ public class Window {
 			
 		});
 		
+		glfwSetWindowSizeCallback(window, (window, width, height) -> {
+			MatrixHandlers.updateProjectionMatrix();
+		});
+		
 		
 		
 		//Get the thread stack and push a new frame
@@ -96,6 +107,30 @@ public class Window {
 		//make window visible
 		glfwShowWindow(window);
 		
+	}
+	
+	public int getWidth(){
+		
+		try(MemoryStack stack = stackPush()){
+		
+			IntBuffer w = stack.mallocInt(1);
+			IntBuffer h = stack.mallocInt(1);
+			glfwGetWindowSize(window, w, h);
+			return w.get(0);
+		
+		}
+	}
+	
+	public int getHeight(){
+		
+		try(MemoryStack stack = stackPush()){
+			
+			IntBuffer w = stack.mallocInt(1);
+			IntBuffer h = stack.mallocInt(1);
+			glfwGetWindowSize(window, w, h);
+			return h.get(0);
+		
+		}
 	}
 	
 	public boolean shouldWindowClose(){

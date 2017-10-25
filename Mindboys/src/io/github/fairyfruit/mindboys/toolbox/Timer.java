@@ -2,6 +2,13 @@ package io.github.fairyfruit.mindboys.toolbox;
 
 import org.lwjgl.glfw.GLFW;
 
+/**
+ * 
+ * @author Gehrig Wilcox
+ * @version 1.0
+ * @since 2017-10-23
+ *
+ */
 public class Timer {
 
 	public static Timer instance;
