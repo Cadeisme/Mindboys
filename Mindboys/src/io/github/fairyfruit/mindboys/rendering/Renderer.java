@@ -46,5 +46,9 @@ public class Renderer {
 		
 		//
 	}
+	
+	public static void cleanup(){
+		shaderProgram.cleanup();
+	}
 
 }
