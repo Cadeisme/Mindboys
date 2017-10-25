@@ -1,9 +1,0 @@
-package io.github.fairyfruit.mindboys.rendering;
-
-public class Renderer {
-
-	
-	public static void render(){
-		
-	}
-}

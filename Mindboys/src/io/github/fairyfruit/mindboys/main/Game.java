@@ -32,7 +32,11 @@ public class Game {
 		
 		GL11.glEnable(GL11.GL_DEPTH_TEST);
 		
-		Renderer.init();
+		try {
+			Renderer.init();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public void loop(){
