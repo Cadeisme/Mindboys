@@ -19,7 +19,5 @@ public class Renderer {
 		
 		Timer.instance.updateFPS();
 		
-		
-		//
 	}
 }

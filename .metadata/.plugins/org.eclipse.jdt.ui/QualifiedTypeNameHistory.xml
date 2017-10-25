@@ -1,22 +1,2 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<<<<<<< HEAD
 <qualifiedTypeNameHistroy/>
-=======
-<qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.lwjgl.glfw.Callbacks"/>
-<fullyQualifiedTypeName name="org.lwjgl.glfw.GLFWErrorCallback"/>
-<fullyQualifiedTypeName name="io.github.fairyfruit.mindboys.main.Keymanager"/>
-<fullyQualifiedTypeName name="org.lwjgl.system.MemoryStack"/>
-<fullyQualifiedTypeName name="org.lwjgl.glfw.GLFWVidMode"/>
-<fullyQualifiedTypeName name="io.github.fairyfruit.mindboys.rendering.Window"/>
-<fullyQualifiedTypeName name="org.lwjgl.opengl.GL"/>
-<fullyQualifiedTypeName name="org.lwjgl.glfw.GLFW"/>
-<fullyQualifiedTypeName name="io.github.fairyfruit.mindboys.rendering.Renderer"/>
-<fullyQualifiedTypeName name="org.lwjgl.system.Configuration"/>
-<fullyQualifiedTypeName name="io.github.fairyfruit.mindboys.settings.Settings"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="org.lwjgl.opengl.GL11"/>
-<fullyQualifiedTypeName name="io.github.fairyfruit.mindboys.toolbox.Timer"/>
-<fullyQualifiedTypeName name="org.lwjgl.opengl.GL30"/>
-</qualifiedTypeNameHistroy>
->>>>>>> 9012c19b7443e10890e152bf340cd6a01aff092c

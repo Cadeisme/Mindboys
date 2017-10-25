@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 3 elements from project &apos;Mindboys&apos;&#x0A;- Original project: &apos;Mindboys&apos;&#x0A;- Original elements:&#x0A;     io.github.fairyfruit.mindboys.rendering.models.Loader.java&#x0A;     io.github.fairyfruit.mindboys.rendering.models.Model.java&#x0A;     io.github.fairyfruit.mindboys.rendering.models.RawModel.java" description="Delete elements" element1="/src&lt;io.github.fairyfruit.mindboys.rendering.models{Loader.java" element2="/src&lt;io.github.fairyfruit.mindboys.rendering.models{Model.java" element3="/src&lt;io.github.fairyfruit.mindboys.rendering.models{RawModel.java" elements="3" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1508868326038" subPackages="false" version="1.0"/>
+</session>
