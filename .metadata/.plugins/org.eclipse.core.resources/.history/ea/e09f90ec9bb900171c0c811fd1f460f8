@@ -1,7 +1,0 @@
-package io.github.fairyfruit.mindboys.rendering.models;
-
-public class Meshes {
-	public Mesh(float[] positions, float[] textCoords, float[] normals, int[] indices){
-		
-	}
-}

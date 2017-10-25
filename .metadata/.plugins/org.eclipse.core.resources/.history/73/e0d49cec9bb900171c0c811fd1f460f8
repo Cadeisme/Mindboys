@@ -1,8 +1,0 @@
-package io.github.fairyfruit.mindboys.rendering.models;
-
-public class StaticMeshesLoader {
-	public static Mesh[] load(float[] positions, float[] textCoords, float[] normals, int[] indices) throws Exception{
-		return load(resourcePath,texturesDir, aiProcess_JoinIdenticalVertices | aiProcess_Triangulate | aiProcess_FixInfacingNormals)
-	}
-	
-}
