@@ -146,6 +146,9 @@ public class Window {
 	}
 	
 	public void cleanup(){
+		
+		Renderer.cleanup();
+		
 		Callbacks.glfwFreeCallbacks(window);
 		glfwDestroyWindow(window);
 		
