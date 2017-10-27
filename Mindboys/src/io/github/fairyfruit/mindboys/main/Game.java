@@ -3,8 +3,11 @@ package io.github.fairyfruit.mindboys.main;
 import org.lwjgl.opengl.GL;
 import org.lwjgl.opengl.GL11;
 
+import io.github.fairyfruit.mindboys.entities.GameObject;
+import io.github.fairyfruit.mindboys.rendering.Camera;
 import io.github.fairyfruit.mindboys.rendering.Renderer;
 import io.github.fairyfruit.mindboys.rendering.Window;
+import io.github.fairyfruit.mindboys.rendering.models.StaticMeshesLoader;
 import io.github.fairyfruit.mindboys.settings.Settings;
 import io.github.fairyfruit.mindboys.toolbox.Timer;
 
@@ -19,6 +22,10 @@ import io.github.fairyfruit.mindboys.toolbox.Timer;
 public class Game {
 
 	public static Game instance;
+	
+	public Camera cam;
+	
+	public GameObject go;
 	
 	public Game(){
 		
@@ -35,6 +42,15 @@ public class Game {
 		try {
 			Renderer.init();
 		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		cam = new Camera();
+		
+		try {
+			go = new GameObject(StaticMeshesLoader.load("lamp.obj", "")[0]);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

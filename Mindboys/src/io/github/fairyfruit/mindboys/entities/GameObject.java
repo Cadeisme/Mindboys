@@ -2,6 +2,8 @@ package io.github.fairyfruit.mindboys.entities;
 
 import org.joml.Vector3f;
 
+import io.github.fairyfruit.mindboys.rendering.models.Mesh;
+
 
 /**
  * 
@@ -16,8 +18,14 @@ public class GameObject {
 	private final Vector3f rot;
 	private float scale;
 	
+	private Mesh mesh;
+	
 	public GameObject(){
 		this(0,0,0);
+	}
+	
+	public GameObject(Mesh mesh){
+		this(new Vector3f(0,0,-10), new Vector3f(0,0,0), 1, mesh);
 	}
 	
 	public GameObject(Vector3f pos){
@@ -33,9 +41,14 @@ public class GameObject {
 	}
 	
 	public GameObject(Vector3f pos, Vector3f rot, float scale){
+		this(pos,rot,scale,null);
+	}
+	
+	public GameObject(Vector3f pos, Vector3f rot, float scale, Mesh mesh){
 		this.pos = pos;
 		this.rot = rot;
 		this.scale = scale;
+		this.mesh = mesh;
 	}
 	
 	public float getScale(){
@@ -44,6 +57,10 @@ public class GameObject {
 	
 	public void setScale(float scale){
 		this.scale = scale;
+	}
+	
+	public Mesh getMesh(){
+		return mesh;
 	}
 	
 	public Vector3f getPos(){
