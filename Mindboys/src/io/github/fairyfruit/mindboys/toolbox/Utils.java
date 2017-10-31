@@ -1,5 +1,6 @@
 package io.github.fairyfruit.mindboys.toolbox;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.ByteBuffer;
@@ -23,6 +24,10 @@ public class Utils {
 				result = scanner.useDelimiter("\\A").next();
 			}
 		return result;
+	}
+	
+	public static String getFilePath(String filename){
+		return (new File(Thread.currentThread().getContextClassLoader().getResource(filename).getFile())).getAbsolutePath();
 	}
 	
 	public static ByteBuffer ioResourceToByteBuffer(String resource, int bufferSize) throws IOException {

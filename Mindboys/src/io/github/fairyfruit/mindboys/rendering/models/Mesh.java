@@ -28,12 +28,19 @@ public class Mesh {
 	
 	private Material mat;
 	
+	
+	
 	public Mesh(float[] positions, float[] textCoords, float[] normals, int[] indices){
+		
+		
 		FloatBuffer verticiesBuffer = null;
 		FloatBuffer textCoordsBuffer = null;
 		FloatBuffer normalBuffer = null;
 		IntBuffer indicesBuffer = null;
+		
+		
 		try{
+			
 			verticiesBuffer = MemoryUtil.memAllocFloat(positions.length);
 			verticiesBuffer.put(positions).flip();
 			

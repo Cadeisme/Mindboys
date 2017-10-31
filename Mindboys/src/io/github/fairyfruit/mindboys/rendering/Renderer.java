@@ -46,14 +46,17 @@ public class Renderer {
 		glClearColor(1.0f, 0.0f, 0.0f, 0.0f); //Set clear color
 	}
 	
+	
+	
 	public static void render(float alpha){
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); //clear framebuffer
 		
 		shaderProgram.bind();
 		
-		MatrixHandlers.updateProjectionMatrix();
 		
 		shaderProgram.setUniform("projectionMatrix", MatrixHandlers.getProjectionMatrix());
+		
+		
 		
 		
 		Matrix4f viewMatrix = MatrixHandlers.getViewMatrix(Game.instance.cam);
@@ -66,6 +69,9 @@ public class Renderer {
 		shaderProgram.setUniform("texture_sampler", 0);
 		
 		
+		
+		
+		
 		Game.instance.go.getMesh().prepareToRender();
 		
 		GL11.glDrawElements(GL11.GL_TRIANGLES, Game.instance.go.getMesh().getVertexCount(), GL11.GL_UNSIGNED_INT, 0);
@@ -73,7 +79,16 @@ public class Renderer {
 		Game.instance.go.getMesh().cleanupAfterRender();
 		
 		
+		
+		
+		
+		
+		
+		
 		shaderProgram.unbind();
+		
+		
+		
 		
 		//swap the color buffers
 		Window.instance.swapBuffers();
@@ -83,6 +98,8 @@ public class Renderer {
 		
 		//
 	}
+	
+	
 	
 	public static void cleanup(){
 		Mesh.cleanup();
