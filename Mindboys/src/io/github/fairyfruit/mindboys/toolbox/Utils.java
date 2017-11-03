@@ -1,8 +1,10 @@
 package io.github.fairyfruit.mindboys.toolbox;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.nio.ByteBuffer;
 import java.nio.channels.Channels;
 import java.nio.channels.ReadableByteChannel;
@@ -10,6 +12,7 @@ import java.nio.channels.SeekableByteChannel;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -82,5 +85,17 @@ public class Utils {
 		}
 		return floatArr;
 	}
+	
+
+    public static List<String> readAllLines(String fileName) throws Exception {
+        List<String> list = new ArrayList<>();
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(Utils.class.getClass().getResourceAsStream(fileName)))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                list.add(line);
+            }
+        }
+        return list;
+    }
 	
 }
